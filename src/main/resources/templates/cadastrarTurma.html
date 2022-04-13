@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Cadastrar Pais ou Responsável</title>
+    <title>Cadastrar Turma</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
@@ -20,10 +20,10 @@
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-around"
     >
-      <h1 class="navbar-brand">Gestão de Pais ou Responsável</h1>
+      <h1 class="navbar-brand">Gestão de Turma</h1>
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" th:href="@{/parent/}">Pais</a>
+          <a class="nav-link" th:href="@{/turma/}">Pais</a>
         </li>
       </ul>
     </nav>
@@ -33,8 +33,8 @@
           <div
             class="col-md-6 col-sm-6 container justify-content-center border"
           >
-            <h2>Cadastro de Responsável</h2>
-            <form th:action="@{/parent/}" th:object="${parent}" method="post">
+            <h2>Cadastro de Turma</h2>
+            <form th:action="@{/turma/}" th:object="${turma}" method="post">
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Nome</label>
@@ -43,27 +43,7 @@
                     type="text"
                     class="form-control"
                     id="name"
-                    placeholder="Informe o nome do responsável"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    th:field="*{email}"
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Informe o email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password">Senha</label>
-                  <input
-                    th:field="*{password}"
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Digite a sua senha"
+                    placeholder="Informe o nome"
                   />
                 </div>
               </div>

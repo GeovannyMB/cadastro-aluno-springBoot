@@ -19,7 +19,8 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-around">
       <h1 class="navbar-brand">Gestão de Alunos</h1>
-      <a th:href="@{/parent/}" class="btn btn-success">Pais ou responsável</a>
+      <a th:href="@{/parent/}" class="btn btn-success">Responsável</a>
+      <a th:href="@{/turma/}" class="btn btn-success">Turma</a>
     </nav>
     <main>
 
@@ -41,8 +42,8 @@
           <table class="table table-striped table-bordered">
             <thead class="table-dark">
               <tr>
-                <th scope="col">Nome</th>
-                <th scope="col">Sobrenome</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome e sobrenome</th>
                 <th scope="col">Email</th>
                 <th scope="col">Senha</th>
                 <th scope="col">Ações</th>
