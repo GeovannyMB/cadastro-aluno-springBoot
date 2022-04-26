@@ -22,7 +22,7 @@ public class TurmaController {
     @Autowired
     TurmaService turmaService;
 
-    @PostMapping("/")
+    @PostMapping("/list-turma")
     public String save(@ModelAttribute("turma") Turma turma) {
         turmaService.save(turma);
         return "redirect:/turma/";
